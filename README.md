@@ -1,4 +1,4 @@
-![ACL](https://acl-logo.png)  Lab 07: NodeJS & NPM
+![ACL](acl-logo.png)  Lab 07: NodeJS & NPM
 =======
 [Code of Conduct](https://github.com/codefellows/code-of-conduct)
 
