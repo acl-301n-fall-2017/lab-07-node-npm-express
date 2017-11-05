@@ -1,0 +1,16 @@
+{
+  "name": "lab-07-node-npm-express",
+  "version": "1.0.0",
+  "description": "First time setting up express in class.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Heather and Langston",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
