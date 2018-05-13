@@ -1,0 +1,19 @@
+{
+  "name": "lab-07",
+  "version": "1.0.0",
+  "description": "Lab 07 pair",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morristaylor/lab-07-node-npm-express.git"
+  },
+  "author": "Taylor and David",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morristaylor/lab-07-node-npm-express/issues"
+  },
+  "homepage": "https://github.com/morristaylor/lab-07-node-npm-express#readme"
+}
