@@ -11,10 +11,12 @@ const app = express();
 const bodyParser = require('body-parser').urlencoded({extended: true});
 const PORT = process.env.PORT || 3000;
 
-// TODO: Include all of the static resources as an argument to app.use()
-
-// TODO: (STRETCH) Write a new route that will handle a request and send the new.html file back to the user
-
+// TODOne: Include all of the static resources as an argument to app.use()
+app.use(express.static('./public'));
+// TODOne: (STRETCH) Write a new route that will handle a request and send the new.html file back to the user
+app.get('/', function(request, response) {
+  response.sendFile('./public/new.html');
+});
 
 app.post('/articles', bodyParser, function(request, response) {
   // REVIEW: This route will receive a new article from the form page, new.html,
