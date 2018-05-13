@@ -14,8 +14,10 @@ const PORT = process.env.PORT || 3000;
 // TODOne: Include all of the static resources as an argument to app.use()
 app.use( express.static( './public' ) );
 
-// TODO: (STRETCH) Write a new route that will handle a request and send the new.html file back to the user
-
+// TODOne: (STRETCH) Write a new route that will handle a request and send the new.html file back to the user
+app.get( '/new', function (request, response) {
+  response.sendFile( '/public/new.html', {root: '.'});
+});
 
 app.post('/articles', bodyParser, function(request, response) {
   // REVIEW: This route will receive a new article from the form page, new.html,
@@ -23,8 +25,9 @@ app.post('/articles', bodyParser, function(request, response) {
   // write a record to our persistence layer!
   console.log(request.body);
   response.send('Record posted to server!!');
-})
+});
 
 app.listen(PORT, function() {
-  // TODO: Log to the console a message that lets you know which port your server has started on
+  // TODOne: Log to the console a message that lets you know which port your server has started on
+    console.log(`listening on ${PORT}`);
 });
