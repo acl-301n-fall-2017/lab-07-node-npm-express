@@ -2,7 +2,7 @@
   "name": "lab-07-node-npm-express",
   "version": "1.0.0",
   "description": "Lab 7",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/vlsiira/lab-07-node-npm-express/issues"
   },
-  "homepage": "https://github.com/vlsiira/lab-07-node-npm-express#readme"
+  "homepage": "https://github.com/vlsiira/lab-07-node-npm-express#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
