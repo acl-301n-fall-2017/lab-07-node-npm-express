@@ -1,0 +1,23 @@
+{
+  "name": "class-07-node-npm-express",
+  "version": "1.0.0",
+  "description": "Setting up a node.js server",
+  "main": "()",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Katedam/lab-07-node-npm-express.git"
+  },
+  "author": "Kate-Zack-Ido",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Katedam/lab-07-node-npm-express/issues"
+  },
+  "homepage": "https://github.com/Katedam/lab-07-node-npm-express#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}
