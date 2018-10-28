@@ -8,7 +8,7 @@
 // Be sure to install that and save it as a dependency after you create your package.json.
 
 const bodyParser = require('body-parser').urlencoded({extended: true});
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 // TODO: Include all of the static resources as an argument to app.use()
 const express = require('express');
@@ -18,8 +18,18 @@ app.use(express.static('./public'));
 
 
 
-// TODO: (STRETCH) Write a new route that will handle a request and send the new.html file back to the user
+// // TODO: (STRETCH) Write a new route that will handle a request and send the new.html file back to the user
+// app.get('/', function(request, response) {
+//   response.sendFile('./public/index.html'); 
+// });
 
+app.get('/', function(request, response) {
+  response.sendFile(__dirname + '/public/index.html');
+});
+
+app.get('/new', function(request, response) {
+  response.sendFile(__dirname + '/public/new.html');
+});
 
 app.post('/articles', bodyParser, function(request, response) {
   // REVIEW: This route will receive a new article from the form page, new.html,
