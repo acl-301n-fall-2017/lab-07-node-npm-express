@@ -1,0 +1,23 @@
+{
+  "name": "class-07",
+  "version": "1.0.0",
+  "description": "lab-07 intro to NodeJS server setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonWash86/lab-07-node-npm-express.git"
+  },
+  "author": "Jon and Johnny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonWash86/lab-07-node-npm-express/issues"
+  },
+  "homepage": "https://github.com/JonWash86/lab-07-node-npm-express#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}
